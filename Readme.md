@@ -1,0 +1,3 @@
+# algor
+
+* bs - binary search
