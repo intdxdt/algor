@@ -4,7 +4,7 @@ import (
 	"github.com/intdxdt/cmp"
 )
 
-//index of item in array
+//IndexOf - index of item in array
 func IndexOf(array []interface{}, key interface{}, comparator cmp.Compare, ij ...int) int {
 	var idx int
 	if len(ij) > 0 {
@@ -18,9 +18,9 @@ func IndexOf(array []interface{}, key interface{}, comparator cmp.Compare, ij ..
 	return idx
 }
 
-//binary search assumes the array is sorted
+//BS - binary search assumes the array is sorted
 func BS(array []interface{}, key interface{}, comparator cmp.Compare, ij ...int) int {
-	low  := 0
+	low := 0
 	high := len(array) - 1
 	if len(ij) > 0 {
 		low = ij[0]
